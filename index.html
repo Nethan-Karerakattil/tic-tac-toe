@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <script src="https://kit.fontawesome.com/d33678e5ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="end-screen">
+        <h1 class="results-text">🎉 Red Wins 🎉</h1>
+        <button class="new-game-btn">New Game</button>
+    </div>
+
+    <section class="board">
+        <div class="row">
+            <div class="0 tile"></div>
+            <div class="1 tile"></div>
+            <div class="2 tile"></div>
+        </div>
+        <div class="row">
+            <div class="3 tile"></div>
+            <div class="4 tile"></div>
+            <div class="5 tile"></div>
+        </div>
+        <div class="row">
+            <div class="6 tile"></div>
+            <div class="7 tile"></div>
+            <div class="8 tile"></div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script>
+        let data = {
+            turn: 1,
+            
+            board: [
+                0, 0, 0,
+                0, 0, 0,
+                0, 0, 0,
+            ]
+        }
+    </script>
+
+    <script src="./scripts/functions.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
